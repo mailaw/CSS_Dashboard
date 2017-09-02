@@ -1,0 +1,126 @@
+/*font tutorial for ensuring compatability https://www.sitepoint.com/community/t/how-to-use-myriad-pro/6109/6 */
+
+body{
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.nav-style{
+    background-color: #208de4;
+    
+}
+
+.padding-nav{
+    padding: 5px;
+    /*need padding inbetween all the images too */
+}
+
+.top-nav{
+    background-color: #134670;
+    height: 80px;
+}
+
+/*maybe the content inside will eliminate need for w/h */
+#dashboard{
+    background-color: #33cc66;
+    width: auto;
+    height: 60px;
+    margin-top: 20px;
+    color: white;
+    font-size: 2em;
+}
+
+.main-content-container{
+    margin-top: 20px;
+}
+.gradient-bg{
+    max-width: 100%;
+    height: auto;
+    display:block;
+}
+
+.gray-border{
+    border: 5px;
+    border-color: gray;
+    margin-top: 20px;
+}
+
+.inner-content{
+    background-color: white;
+    
+}
+
+h2{
+    color: #2498f4;
+}
+h3{
+    color: #fe7f13;
+    font-size: 1em;
+}
+h4{
+    color: #2498f4;
+}
+.ddyk-container{
+    background-color: #2498f4;
+    padding: 30px;
+    
+}
+
+p. ddky-container{
+    color:white;
+}
+
+/*tutorial used: http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */
+
+.custom-number-list{
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
+
+.custom-number-list li {
+  counter-increment: step-counter;
+  margin: 0 0 40px 0;
+  position: relative;
+    
+}
+.list-padding{
+    padding:10px;
+}
+.custom-number-list li::before{
+    
+    position: absolute;
+    top: 0;
+    left: -2.4em;
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 1.5em;
+    line-height: 1.35;
+    text-align: center;
+    
+    border-radius: 50%;
+    content: counter(step-counter);
+
+    background-color: #32cc66;
+    color: white;
+    /*
+    width: 18px; height: 18px;
+    -moz-border-radius: 999px;
+    border-radius: 999px
+    */
+}
+
+.rec-list-container{
+    width: 100%;
+}
+p .rec-list-container{
+    font-size: 16pt;
+}

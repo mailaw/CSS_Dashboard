@@ -12,49 +12,110 @@
 
   </head>
   <body>
-      <nav>
-      </nav>
-      <div class="top-nav padding-nav">
-          
+      <!-- using container and container fluid!! -->
+      <nav class="nav-style">
+        <div class="container padding-nav">
           <img src="images/MINI%20of%20Raleigh.png">
           <img src="images/Spacer.png">
           <img src="images/Icon_%20Help.png">
           <img src="images/Spacer.png">
           <img src="images/Icon_%20Settings.png">
+        </div>
+      </nav>
+      
+      <div class="container-fluid top-nav icon-nav">
+          <div class="col-md-10">
+          </div>
+              <!--use the sprites-->
+      </div>
+    
+      <div id="dashboard" class="container">
+          <div class="row">
+            <div class="col-md-10 float-center">
+                <p>Dashboard</p>
+            </div>
+            <form class="col-md-2">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+          </div>
       </div>
       
-      <div class="dashboard">
-      </div>
-      <div class="container outer-container">
-          <div class="inner-container">
-            <div class="row">
+      <!--the border is between the different col in the rows, but not images, so need to put it on rows-->
+      <div class="container main-content-container no-padding">
+          <img class="img-responsive gradient-bg no-padding no-margin" src="images/Shade.png">
+         <div class="container inner-content">
+            <div class="row gray-border">
                 <div class="col-md-2">
+                    <h3>Announcements</h3>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
+                    <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
+                    <img src= "images/Button_%20Navigation_%20Small.png">
+                    <img src= "images/Button_%20Navigation_%20Small-1.png">
                 </div>
             </div>
-          <div class="row">
-            <div class="col-md-4">
+          <div class="row gray-border">
+            <div class="col-md-5">
                 <div class="row">
+                    <h2>Tasks <img src="images/Icon_%20Settings_gray.png"></h2>
                 </div>
                 <div class="row">
+                    <ol class="custom-number-list">
+                        
+                        <li><h4>Welcome Contacts</h4></li>
+                        <li><h4>Provide Responses</h4></li>
+                        <li><h4>Review Activity</h4></li>
+                        <li><h4>Reach Out</h4></li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <div class="rec-list-container">
+                        <h2>Recommendations</h2>
+                        <img src="images/Icon_%20Article.png">
+                        <p>Article</p>
+                        <h5>7 Steps to gettting more Fans</h5>
+                    </div>
+
                 </div>
               </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="row">
+                    <h2>Analytics</h2>
                 </div>
                 <div class="row">
+                    <div class="col-md-10">
+                    
+                        <div class="row">
+                            <h5>Activity</h5>
+                            <form class="float-right"> Date </form>
+                        </div>
+                        <div class="row">
+                            <img src="images/chart.png">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>CHANNELS</h5>
+                        <img src="images/Pie_Channels.png">
+                        <h5>REFERRALS</h5>
+                        <img src="images/Pie_Ref.png">
+                    </div>
                 </div>
                 <div class="row">
+                    <!--social icons, make a horizontal list?-->
+                </div>
+                <div id="contact-squares" class="row">                                                
+                </div>
+                
+                <div class="row ddyk-container">
                 </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row gray-border">
           </div>
       </div>
-      
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
