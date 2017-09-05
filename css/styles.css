@@ -12,22 +12,22 @@ body{
     margin: 0;
 }
 
-.nav-style{
+.top-nav{
     background: rgba(35,152,242,1);
 	background: -webkit-linear-gradient(top, rgba(35,152,242,1) 0%, rgba(30,135,220,1) 100%);
     
 }
 
-.padding-nav{
-    padding: 10px 10px;
-    /*need padding inbetween all the images too */
-    
+.nav-style{
+    margin-left: 80%;
+    padding: 7px;
+    /*need padding inbetween all the images too */   
 }
 
-.top-nav{
-    background-color: #134670;
-    height: 80px;
+.nav-style img{
+    margin: 0 5px;
 }
+
 .border-blue-bot{
     border-bottom: 1px solid;
     border-color:#208ce3;
@@ -39,24 +39,45 @@ body{
 }
 
 .icon-nav{
-    background-image: url(/images/)
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
+    text-align: center;
+    background-image: url(/images/icon_nav_bg.png);
+    height: 105px;
+}
+
+.icon-nav img{
+    margin: 25px 20px 0 0;
+}
+
+.icon-container{
+    /*this is to align the lil icons*/
 }
 /*maybe the content inside will eliminate need for w/h */
 #dashboard{
     background-color: #33cc66;
-    width: auto;
-    height: 60px;
     margin-top: 20px;
     color: white;
     font-size: 2em;
+    border: 1px solid;
+    border-radius: 7px;
     
 }
 
+#dashboard p{
+    margin: 10px 0;
+    padding: auto;
+}
+.form-control{
+    margin: 15px 0px;
+    
+}
+.search-icon{
+    background-image: url(/images/Icon_%20Search.png);
+    background-repeat: no-repeat;
+    background-position: 130px 5px;
+    
+    
 
+}
 .main-content-container{
     margin-top: 20px;
 }
@@ -72,7 +93,8 @@ body{
     border: 1px;
     border-style: solid inset;
     border-color: #e9e9e9;
-}
+    box-shadow: 10px 10px 5px #888888;
+}  
 
 .border-left{
     border-left: 1px solid;
@@ -81,6 +103,11 @@ body{
 
 .border-top{
     border-top: 1px solid;
+    border-color: #e9e9e9;
+}
+
+.border-bottom{
+    border-bottom: 1px solid;
     border-color: #e9e9e9;
 }
 
@@ -138,6 +165,14 @@ h6{
     
 }
 
+.tasks-header{
+    padding: 15px 25px;
+}
+
+.tasks-icon{
+    margin-left: 200px;
+    max-width: 100%;
+}
 /*tutorial used: http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */
 
 .custom-number-list{
@@ -151,6 +186,8 @@ h6{
   counter-increment: step-counter;
   margin: 0 0 40px 0;
   position: relative;
+  margin-left: 30px;
+  
     
 }
 .list-padding{
@@ -204,8 +241,8 @@ p .rec-list-container{
 
 
 
-/*.custom-select{
+.custom-select{
     background: url(/images/down_arrow.png);
     background-repeat: no-repeat;
     float: 
-}*/
+}
