@@ -15,28 +15,27 @@
       <!-- using container and container fluid!! -->
       <nav class="top-nav border-blue-bot">
         <div class="container nav-style">
-          <img src="images/MINI%20of%20Raleigh.png">
+          <a href="#"><img src="images/MINI%20of%20Raleigh.png"></a>
           <img src="images/Spacer.png">
-          <img src="images/Icon_%20Help.png">
+          <a href="#"><img src="images/Icon_%20Help.png" class="button"></a>
           <img src="images/Spacer.png">
-          <img src="images/Icon_%20Settings.png">
+          <a href="#"><img src="images/Icon_%20Settings.png" class="btn"></a>
         </div>
       </nav>
       
       <div class="container-fluid border-blue-top icon-nav">
-          <div class="icon-container">
-              <img src="images/Icon_%20Dashboard.png">
-              <img src="images/Icon_%20Customers.png">
-              <img src="images/Icon_%20Messages.png">
-              <img src="images/Icon_%20Promotions.png">
-              <img src="images/Icon_%20Page%20Creator.png">
-              <img src="images/Icon_%20Analytics.png">
-          </div>
+          <a href="#"><img src="images/Icon_%20Dashboard.png"></a>
+          <a href="#"><img src="images/Icon_%20Customers.png"></a>
+          <a href="#"><img src="images/Icon_%20Messages.png"></a>
+          <a href="#"><img src="images/Icon_%20Promotions.png"></a>
+          <a href="#"><img src="images/Icon_%20Page%20Creator.png"></a>
+          <a href="#"><img src="images/Icon_%20Analytics.png"></a>
+          <img class="marker" src="images/Marker.png">
       </div>
-    
-      <div id="dashboard" class="container">
+      
+      <div id="dashboard" class="container rounded-corners">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-10 dashboard-container">
                 <p>Dashboard</p>
             </div>
             <form class="col-md-2">
@@ -46,51 +45,85 @@
       </div>
       
       <!--the border is between the different col in the rows, but not images, so need to put it on rows-->
-      <div class="container no-padding main-content-container gradient-bg">
+      <div class="container outer-content-container gradient-bg">
          <div class="container-fluid inner-content border">
             <div class="row">
                 <div class="col-md-2">
-                    <h3>Announcements</h3>
+                    <h3>ANNOUNCEMENTS</h3>
                 </div>
                 <div class="col-md-9 border-left">
                     <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p>
                 </div>
-                <div class="col-md-1 border-left">
-                    <img src= "images/Button_%20Navigation_%20Small.png">
-                    <img src= "images/Button_%20Navigation_%20Small-1.png">
+                <div class="col-md-1 border-left ">
+                    <div class="announcement-arrows">
+                    <input type="image" src= "images/Button_%20Navigation_%20Small.png" class="arrow-btn">
+                    <input type="image" src= "images/Button_%20Navigation_%20Small-1.png" class="arrow-btn">
+                    </div>
                 </div>
             </div>
           <div class="row border-top">
             <div class="col-md-4">
-                <div class="row tasks-header">
-                    <h2>Tasks<img class="tasks-icon" src="images/Icon_%20Settings_gray.png"></h2>
+                <div class="row h2-padding">
+                    <h2>Tasks<input type="image" class="tasks-icon" src="images/Icon_%20Settings_gray.png" ></h2>
                 </div>
                 <div class="row">
-                    <ol class="custom-number-list">
+                    <ol class="custom-number-list tasks">
+                        <!-- B O OOOOOOOOOOOOO -->
                         <li class="border-bottom"><h4>Welcome Contacts</h4></li>
-                        <li><h4>Provide Responses</h4></li>
-                        <li><h4>Review Activity</h4></li>
-                        <li><h4>Reach Out</h4></li>
+                        <a href="#"><li><h4>Provide Responses</h4><div class="profile"><h4>36</h4></div></li></a>
+                        <a href="#"><li><h4>Review Activity</h4><div class="profile"><h4>36</h4></div></li></a>
+                        <a href="#"><li><h4>Reach Out</h4><div class="profile"><h4>2</h4></div></li></a>
                     </ol>
                 </div>
                 <div class="row border-top">
-                    <div class="rec-list-container">
+                    <div class="rec-container">
                         <h2>Recommendations</h2>
-                        <img src="images/Icon_%20Article.png">
-                        <p>Article</p>
-                        <h5>7 Steps to gettting more Fans</h5>
+                            <ul class="rec-list">
+                                <a href="#">
+                                    <li>
+                                        <!--span class="rec-icon"><img src="images/Icon_%20Article.png">
+                                        </span-->
+                                        <p>Article</p>
+                                        <h5>7 Steps to getting more Fans</h5>
+                                    </li>
+                                </a>
+                                
+                                 <a href="#">
+                                    <li>
+                                        <!--span class="rec-icon"><img src="images/Icon_%20Article.png">
+                                        </span-->
+                                        <p>Article</p>
+                                        <h5>Increase traction with more interactions</h5>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <p>Checklist</p>
+                                        <h5>Creating a Promotion</h5>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <p>Tip</p>
+                                        <h5>Share More</h5>
+                                    </li>
+                                </a>
+                                
+                                
+                            </ul>
+                       
                     </div>
-
                 </div>
-              </div>
+            </div>
             <div class="col-md-8 border-left">
-                <div class="row">
+                <div class="row h2-padding">
                     <h2>Analytics</h2>
                 </div>
-                <div class="row">
+                <div class="row container">
                     <div class="col-md-10 border-left-outset">
+                        <!--the chart is coming out of the container here ?? -->
                     
-                        <div class="row">
+                        <div class="row h6-padding">
                             <h6>ACTIVITY</h6>
                             <select class="custom-select">
                                 <option selected>6/28/11 - 07/21/11</option>
@@ -108,42 +141,67 @@
                         <img src="images/Pie_Ref.png">
                     </div>
                 </div>
-                <div id="social-checkboxes" class="row">
-                    <!--social icons, make a horizontal list?-->
-                    <div class="Form:_Checkbox">
-                    </div>
+                
+                <div class="row">
+                    
                     <div class="form-check form-check-inline">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 1
-                      </label>
+                          <input type="checkbox" class="social-checkboxes">
+                          <img src="images/Facebook.png">
                     </div>
-                    <div class="form-check form-check-inline">
-                        <label class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input">
-                          <span class="custom-control-indicator"></span>
-                          <span class="custom-control-description">Check this custom checkbox</span>
-                        </label>
-                    </div>
+                    
+                    
                 </div>
-                <div class="row border-top"> 
-                    <div class="contact-squares">
-                    Hi 
+                
+                <div class="row border-top square-section"> 
+                    <div class="col-md-1 ribbon">
+                        <img src="images/ribbon-right.png">
+                    </div>
+                    <div class="col-md-4.5">
+                        <img class="outer-contact-square" src="images/green-avatar.png">
+                        <div class=" contact-square square-border">
+
+                        
+                            <div class="middle-ribbon text-center">
+                                <h1>75 CONTACTS</h1><p> 4 INFLUENCES</p>
+                            </div>
+                            <img class="contact-graph-style" src="images/contact-graph.png">
+                        </div>
+                    </div>
+                    <div class="col-md-1 ribbon">
+                        <div class="row">
+                        <img src="images/ribbon-left.png"><img src="images/ribbon-right.png"></div>
+                    </div>
+                    <div class="col-md-4.5 contact-square">
+                    
+                    </div>
+                    <div class="col-md-1 ribbon">
+                        <img src="images/ribbon-left.png">
                     </div>
                 </div>
                 
-                <div class="row border-top">
-                    <div class="ddyk-container">
+                <div class="row border-top ddyk-container rounded-corners">
+                    <div class="col-md-1 arrows ">
+                        <a href="#">
+                            <img src="images/back-arrow.png">
+                        </a>
+                    </div>
+                    <div class="col-md-10">
                         <h6>DID YOU KNOW?</h6>
                         <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+                    </div>
+                    <div class="col-md-1 arrows front-arrow">
+                        <a href="#">
+                            <img src="images/front-arrow.png">
+                        </a>
                     </div>
                 </div>
             </div>
           </div>
           <div class="row gray-border">
           </div>
+      
       </div>
-      </div>
-
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
