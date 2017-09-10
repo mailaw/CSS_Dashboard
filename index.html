@@ -139,10 +139,19 @@
                     
                         <div class="row h6-padding">
                             <h6>ACTIVITY</h6>
-                            <select class="custom-select">
+                              <div class="dropdown">
+                                <!-- Tutorial used: https://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp -->
+                                <button class="dropdown-btn" type="button" data-toggle="dropdown"><h1>6/28/11 - 07/21/11</h1><img src="images/dropdown_cursor.png"> </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">5/01/11 - 6/27/11</a></li>
+                                  <li><a href="#">6/28/11 - 07/21/11</a></li>
+                                  <li><a href="#">07/22/11 - Present</a></li>
+                                </ul>
+                              </div>
+                            <!--select class="custom-select">
                                 <option selected>6/28/11 - 07/21/11</option>
                                 <option value="1">Other date</option>
-                            </select>
+                            </select-->
                         </div>
                         <div class="row">
                             <img class="chart" src="images/chart.png">
@@ -166,7 +175,7 @@
                     
                 </div>
                 
-                <div class="row border-top square-section"> 
+                <div class="row border-top square-section border-bottom "> 
                     <div class="col-md-1 ribbon">
                         <img src="images/ribbon-right.png">
                     </div>
