@@ -17,9 +17,15 @@ body{
     
 }
 
-.marker{
+#marker{
     padding: 0;
-    margin: 0;
+    margin:0;
+    /*margin-top: 40px;*/
+    left:36%;
+    vertical-align: bottom;
+    margin-top: 95px;
+    z-index: 3; 
+    position: absolute;
     
 }
 .button{
@@ -72,16 +78,24 @@ body{
     margin: 25px 20px 0 0;
 }
 
+.icon-nav img:hover{
+    outline: #e8e8e8 solid 0px;
+    /*filter: url('#green-filter');*/
+    -webkit-filter: blur(0px) brightness(0.9) contrast(0.7) grayscale(0.3) hue-rotate(296deg) invert(0) opacity(100%) saturate(5) sepia(0.2) drop-shadow(0px 0px 0px #000);
+}
+
 
 /*maybe the content inside will eliminate need for w/h */
 #dashboard{
     background-color: #33cc66;
     margin-top: 20px;
     color: white;
-    font-size: 2em;
+    font-size: 2.3em;
 }
 #dashboard p{
     margin-top: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     margin-right: 35px; 
 }
 .dashboard-container{
@@ -96,15 +110,24 @@ body{
 }
 
 
-
 .form-control{
-    margin: 15px 0px;
+    display: inline-block;
+    padding: 10px 40px 7px 10px;
+    z-index: 1;
+    vertical-align: top;
+    width: 250px;
+    margin: 20px 15px;
+        float: right;
+
     
 }
 .search-icon{
     background-image: url(/images/Icon_%20Search.png);
     background-repeat: no-repeat;
-    background-position: 130px 5px;
+    background-position: 95% 45%;
+    display: inline-block;
+    position:relative;
+    
 
 }
 .outer-content-container{
@@ -125,7 +148,9 @@ body{
     border: 1px;
     border-style: solid inset;
     border-color: #e9e9e9;
-    box-shadow: 10px 10px 5px #888888;
+    -webkit-box-shadow: 1px -2px 4px 1px rgba(234,234,234,1);
+    -moz-box-shadow: 1px -2px 4px 1px rgba(234,234,234,1);
+    box-shadow: 1px -2px 4px 1px rgba(234,234,234,1);
 }  
 
 .border-left{
@@ -158,9 +183,10 @@ body{
 
 .announcement-arrows{
     margin-top: 15px;
+    text-align: center;
 }
-.temp-padding{
-    margin-top: 20px;
+
+.arrow-btn:hover{
 
 }
 
@@ -185,7 +211,9 @@ h6{
     color:#999999;
 }
 
-
+.ddyk{
+    margin: 40px 40px;
+}
 .ddyk-container{
     background-color: #2498f4;
     margin: auto;
@@ -248,6 +276,8 @@ h6{
   margin: 0 0 40px 0;
   position: relative;
   margin-left: 30px;
+   /* transition: color 0.2s;
+    color: #2498f4;*/
   
     
 }
@@ -307,6 +337,7 @@ h6{
 .rec-container{ 
     padding: 20px;
 }
+
 .rec-list ul{
    padding-left: 0px;
    
@@ -314,18 +345,33 @@ h6{
 .rec-list li{
     padding: 15px;
     padding-left: 0px;
-    margin-left: 0px;
+    margin-left: 5px;
     list-style-type: none;
     border-bottom: 1px dotted;
+    border-color: #e5e5e5;
+    color: #777777;
 }
 
+.rec-list li img{
+    display: inline-block;
+    right: 88%;
+    position: absolute;
+    width: 26px;
+    margin-top: 5px;
+    
+}
 
+#tip-icon{
+    width: 18px;
+    right: 90%;
+}
 
 .rec-list li h5{
     display:inline;
     vertical-align: middle;
     margin-bottom: 3px;
     line-height: 1.1;
+    
 }
 
 .rec-list li p{
@@ -336,6 +382,7 @@ h6{
 
 .rec-icon{
     display: inline;
+    
 }
 
 .rec-list a{
@@ -384,7 +431,7 @@ h6{
 
 .ribbon{
     display: absolute;
-    padding-left: 50px;
+    padding-left: 48px;
     margin: auto; 
     
 }
@@ -399,10 +446,8 @@ h6{
 }
 
 .contact-square{
-    width: 300px;
-    height: 300px;
     border-radius: 5px;
-    padding: 50px 0px;
+    padding: 20px 0px;
     margin-top: 60px;
 }
 
@@ -440,13 +485,50 @@ h6{
 box-shadow: 0px 3px 4px 2px rgba(178,178,178,1);
 }
 
-.outer-contact-square{
+.outer-profile{
+    background-image: url(/images/green-avatar.png);
+    background-repeat: no-repeat;
+    padding:40px;
+    
+    margin: 0;
     position: absolute;
-    margin-left: 10px;
+    margin: 35px 110px 0px;
+    
 }
 
 .contact-graph-style{
     margin-left: 150px;
     padding-left: 50px;
     
+}
+
+.bottom-ads{
+    background-color: #2498f4;
+    
+}
+
+.ad-container{
+    background-color: white;
+    height: 161px;
+    width: 280px;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 3px 4px 2px rgba(25,106,170,1);
+-moz-box-shadow: 0px 3px 4px 2px rgba(25,106,170,1);
+box-shadow: 0px 3px 4px 2px rgba(25,106,170,1);
+    
+}
+
+.outer-ad-container{
+     padding: 40px;
+}
+
+.head-ad{
+    position: relative;
+    top: -10px;
+    z-index 99;
+    margin-left: 5px;
+}
+
+.outer-ad-right{
+    margin-left: 18px;
 }
