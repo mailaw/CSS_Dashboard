@@ -58,7 +58,7 @@
           </div>
       </div>
       
-      <!--the border is between the different col in the rows, but not images, so need to put it on rows-->
+   
       <div class="container outer-content-container gradient-bg">
          <div class="container-fluid inner-content border">
             <div class="row">
@@ -78,15 +78,24 @@
           <div class="row border-top">
             <div class="col-md-4">
                 <div class="row h2-padding">
-                    <h2>Tasks<input type="image" class="tasks-icon" src="images/Icon_%20Settings_gray.png" ></h2>
+                    <h2>Tasks</h2>
+                    <a href="#"><img class="tasks-icon" src="images/Icon_%20Settings_gray.png" ></a>
                 </div>
                 <div class="row">
-                    <ol class="custom-number-list tasks">
-                        <!-- B O OOOOOOOOOOOOO -->
-                        <li class="border-bottom"><h4>Welcome Contacts</h4></li>
-                        <a href="#"><li><h4>Provide Responses</h4><div class="profile"><h4>36</h4></div></li></a>
-                        <a href="#"><li><h4>Review Activity</h4><div class="profile"><h4>36</h4></div></li></a>
-                        <a href="#"><li><h4>Reach Out</h4><div class="profile"><h4>2</h4></div></li></a>
+                    <ol class="custom-number-list task-font ">
+                        <li><a href="#">
+                            <h4>Welcome Contacts</h4><div class="profile"><h4>32</h4></div></a>
+                        </li>
+                        <li><a href="#">
+                            <h4>Provide Responses</h4><div class="profile"><h4>36</h4></div></a>
+                        </li>
+                        <li><a href="#">
+                            <h4>Review Activity</h4><div class="profile"><h4>36</h4></div></a>
+                        </li>
+                        <li id="no-border"><a href="#">
+                            <h4>Reach Out</h4><div class="profile"><h4>2</h4></div></a>
+                        </li>
+
                     </ol>
                 </div>
                 <div class="row border-top">
@@ -184,8 +193,7 @@
                 
                 
                 <div class="row border-top square-section border-bottom "> 
-                    <div class="col-md-12">
-                        <div class="contact-container">
+                    <div class="col-md-6 col-sm-12 contact-container text-center">
                             <img class="ribbon" src="images/ribbon-right.png">
                             <div class="outer-profile"></div>
                             <div class="contact-square square-border">
@@ -194,25 +202,22 @@
                                 </div>
                                 <img class="contact-graph-style" src="images/contact-graph.png">
                             </div>
-                            <img src="images/ribbon-left.png">
-                        </div>
-                    
-                        <div class="contact-container">
-                            <img src="images/ribbon-right.png">
+                            <img class="ribbon" src="images/ribbon-left.png">
+                    </div>
+                    <div class="col-md-6 col-sm-12 contact-container text-center">
+                            <img class="ribbon" src="images/ribbon-right.png">
                             <div class="outer-profile-orange"></div>
                             <div class="contact-square square-border">
                                 <div class="middle-ribbon text-center">
                                     <h1>17 CUSTOMERS</h1><p>0 INFLUENCES</p>
                                 </div>
-                            <img class="contact-graph-style" src="images/contact-graph.png">
+                            <img class="contact-graph-style" src="images/orange_chart.png">
                             </div>
-                            <img src="images/ribbon-left.png">
-                        </div>
-                        
+                            <img class="ribbon" src="images/ribbon-left.png">
                     </div>
                 </div>
                 <div class="row border-top ddyk-container rounded-corners">
-                    <div class="col-md-1 arrows ">
+                    <div class="col-md-1 arrows">
                         <a href="#">
                             <img src="images/back-arrow.png">
                         </a>
@@ -252,38 +257,36 @@
     
         </div>
       
-          
-    <div class="footer row">
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-2 border-right list">
-        <ul class="hor">
-          <li><a href="#">Tutorials</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">More</a></li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <p><a href="#">Ariel Winter </a> likes your <a href="#">Win A Cooper Sweepstakes</a> Promotion</p>
-        <a href="#"><img src="images/footer-up.png"></a>
-      </div>
-      <div class="col-md-1 border-right">
-        <img id="profile-pic-icon" src="images/footer_Avatar.png">
-        <p><a href="#">Logout </a></p>
-      </div>
-      <div class="col-md-1 social-icons border-right">
-          <a href="#"><img src="images/PullUp.png"></a>
-          <a href="#"><img src="images/Avatar_%20Facebook.png"></a>
-          <a href="#"><img src="images/Avatar_%20Twitter.png"></a>
-          <a href="#"><img src="images/Avatar_%20Foursquare.png"></a>
-          <a href="#"><img src="images/Avatar_%20YouTube.png"></a>
-      </div>
-      <div class="col-md-1">
-      </div>
+    <footer>    
+        <div class="footer row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-2 border-right list">
+            <ul class="horizontal">
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">More</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 center-content">
+            <a href="#">Ariel Winter </a> likes your <a href="#">Win A Cooper Sweepstakes</a> Promotion<a href="#"><img class="pull-up border-right" src="images/PullUp.png"></a>
+          </div>
+          <div class="col-md-1 border-right logout">
+            <img id="profile-pic-icon" src="images/footer_Avatar.png">
+            <a href="#">Logout</a>
+          </div>
+          <div class="col-md-1 social-icons border-right">
+              <a href="#"><img src="images/Avatar_%20Facebook.png"></a>
+              <a href="#"><img src="images/Avatar_%20Twitter.png"></a>
+              <a href="#"><img src="images/Avatar_%20Foursquare.png"></a>
+              <a href="#"><img src="images/Avatar_%20YouTube.png"></a>
+          </div>
+          <div class="col-md-1">
+          </div>
 
-    </div>
-      
+        </div>
+     </footer> 
       
 
         <!-- Optional JavaScript -->
